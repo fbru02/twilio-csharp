@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twilio.Api.MonoDroid", "Twilio.Api.MonoDroid.csproj", "{FBB12CB6-7255-4F5C-825D-FAC178682422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twilio.Api", "..\Twilio.Api\Twilio.Api.csproj", "{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseWithPackage|Any CPU = ReleaseWithPackage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.ReleaseWithPackage|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB12CB6-7255-4F5C-825D-FAC178682422}.ReleaseWithPackage|Any CPU.Build.0 = Release|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.ReleaseWithPackage|Any CPU.ActiveCfg = ReleaseWithPackage|Any CPU
+		{894FF9E8-4DBF-4472-8AE2-1A6A988E105B}.ReleaseWithPackage|Any CPU.Build.0 = ReleaseWithPackage|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

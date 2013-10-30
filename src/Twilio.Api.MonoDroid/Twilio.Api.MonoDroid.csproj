@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,7 +48,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Model\" />
+    <ProjectReference Include="..\Twilio.Api\Twilio.Api.csproj">
+      <Project>{894ff9e8-4dbf-4472-8ae2-1a6a988e105b}</Project>
+      <Name>Twilio.Api</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Twilio.Api\Model\Account.cs">
@@ -195,9 +198,6 @@
     <Compile Include="..\Twilio.Api.Silverlight\AuthorizedConnectApps.Async.cs">
       <Link>AuthorizedConnectApps.Async.cs</Link>
     </Compile>
-    <Compile Include="..\Twilio.Api.Silverlight\AvailablePhoneNumbers.Aysnc.cs">
-      <Link>AvailablePhoneNumbers.Aysnc.cs</Link>
-    </Compile>
     <Compile Include="..\Twilio.Api.Silverlight\Calls.Async.cs">
       <Link>Calls.Async.cs</Link>
     </Compile>
@@ -212,9 +212,6 @@
     </Compile>
     <Compile Include="..\Twilio.Api.Silverlight\IncomingPhoneNumbers.Async.cs">
       <Link>IncomingPhoneNumbers.Async.cs</Link>
-    </Compile>
-    <Compile Include="..\Twilio.Api.Silverlight\Notifications.Aysnc.cs">
-      <Link>Notifications.Aysnc.cs</Link>
     </Compile>
     <Compile Include="..\Twilio.Api.Silverlight\OutgoingCallerIds.Async.cs">
       <Link>OutgoingCallerIds.Async.cs</Link>
@@ -237,5 +234,7 @@
     <Compile Include="..\Twilio.Api\SharedAssemblyInfo.cs">
       <Link>SharedAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="AvailablePhoneNumbers.Async.cs" />
+    <Compile Include="Notifications.Async.cs" />
   </ItemGroup>
 </Project>
